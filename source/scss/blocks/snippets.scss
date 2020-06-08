@@ -1,0 +1,43 @@
+.snippets {
+	padding: 86px 0 0 0;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__column {
+		width: 33.33333%;
+	}
+	&__item {
+		padding: 0 60px 0 0;
+		&--title {
+			width: 130px;
+			font-size: 26px;
+			line-height: 26px;
+			margin-bottom: 24px;
+		}
+		&--text {
+			color: #9aa0ab;
+			font-family: "Open Sans";
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 22px;
+			margin-bottom: 30px;
+		}
+	}
+	@media (max-width: 707px) {
+		padding: 20px 0 0 0;
+		&__column {
+			padding-top: 10px;
+			width: 100%;
+			border-bottom: 1px solid #314a5b;
+		}
+		&__item {
+			width: 300px;
+			// margin: 0 auto;
+			padding: 0;
+			margin-bottom: 20px;
+
+		}
+	}
+}
